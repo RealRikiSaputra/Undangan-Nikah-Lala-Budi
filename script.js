@@ -179,17 +179,23 @@ $(window).scroll(function(){
 
 
 document.getElementById('open').addEventListener('click', () => {
-    if (audio.paused) {
-        audio.play();
-      }
     const cover = document.querySelector('#cover');
+    const audio = document.getElementById('invitationAudio'); // Ambil elemen audio
+
+    // Efek transisi
     cover.style.marginTop = "-100rem";
     cover.style.opacity = "0";
-    cover.style.transition = "all 1s .1s ease-in-out"
+    cover.style.transition = "all 1s .1s ease-in-out";
+    
     setTimeout(() => {
         cover.classList.add('hidden');
-    }, 2000)
-})
+    }, 2000);
+
+    // Putar audio ketika tombol ditekan
+    audio.play().catch(error => {
+        console.error("Audio tidak dapat diputar secara otomatis:", error);
+    });
+});
 
 window.onload = function() {
     // Sembunyikan loading, tampilkan konten
