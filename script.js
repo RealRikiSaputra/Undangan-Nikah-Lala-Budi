@@ -179,6 +179,9 @@ $(window).scroll(function(){
 
 
 document.getElementById('open').addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+      }
     const cover = document.querySelector('#cover');
     cover.style.marginTop = "-100rem";
     cover.style.opacity = "0";
