@@ -188,7 +188,11 @@ document.getElementById('open').addEventListener('click', () => {
     }, 2000)
 })
 
-
+window.onload = function() {
+    // Sembunyikan loading, tampilkan konten
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
 // END JS ANIMATION
 
 // CountDown
