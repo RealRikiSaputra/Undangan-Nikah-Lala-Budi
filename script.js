@@ -312,3 +312,20 @@ window.addEventListener('scroll', () => {
         document.querySelector('nav ul li a[href*= '+ current +']').classList.add('active');
     });
 });
+
+function salinRekening(element) {
+    const nomorRekening = element.getAttribute('data-nomer');
+    
+    const tempInput = document.createElement('input');
+    tempInput.value = nomorRekening;
+    document.body.appendChild(tempInput);
+    
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999);
+
+    document.execCommand("copy");
+
+    document.body.removeChild(tempInput);
+
+    alert('Nomor rekening berhasil disalin: ' + nomorRekening);
+}
