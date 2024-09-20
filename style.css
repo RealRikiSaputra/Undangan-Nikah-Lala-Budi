@@ -305,17 +305,6 @@ img.wedding {
     transform: scale(1);
     opacity: 1;
 }
-
-#img3 {
-    transform: scale(0);
-    transition: 1.3s;
-    opacity: 0;
-}
-#img3.muncul {
-    transform: scale(1);
-    opacity: 1;
-}
-
 #img4 {
     transform: scale(0);
     transition: .7s;
