@@ -286,10 +286,6 @@ img.wedding {
     transition: 0.3s ease-in-out;
 }
 
-.gallery img:hover {
-    filter: brightness(130%);
-}
-
 #img1 {
     transform: scale(0);
     transition: .7s;
