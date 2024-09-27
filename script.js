@@ -115,11 +115,11 @@ $(window).scroll(function(){
         $('#img1').removeClass('muncul');
     }
 
-    if( wScroll > $('#img4').offset().top - 600 ) {
-        $('#img4').addClass('muncul'); 
-    } else {
-        $('#img4').removeClass('muncul');
-    }
+    // if( wScroll > $('#img4').offset().top - 600 ) {
+    //     $('#img4').addClass('muncul'); 
+    // } else {
+    //     $('#img4').removeClass('muncul');
+    // }
 
     if( wScroll > $('#img5').offset().top - 600 ) {
         $('#img5').addClass('muncul'); 
