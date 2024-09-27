@@ -115,12 +115,6 @@ $(window).scroll(function(){
         $('#img1').removeClass('muncul');
     }
 
-    if( wScroll > $('#img2').offset().top - 600 ) {
-        $('#img2').addClass('muncul'); 
-    } else {
-        $('#img2').removeClass('muncul');
-    }
-
     if( wScroll > $('#img4').offset().top - 600 ) {
         $('#img4').addClass('muncul'); 
     } else {

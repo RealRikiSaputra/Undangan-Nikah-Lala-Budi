@@ -296,15 +296,6 @@ img.wedding {
     opacity: 3;
 }
 
-#img2 {
-    transform: scale(0);
-    transition: 1s;
-    opacity: 0;
-}
-#img2.muncul {
-    transform: scale(1);
-    opacity: 1;
-}
 #img4 {
     transform: scale(0);
     transition: .7s;
